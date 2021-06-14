@@ -1,8 +1,7 @@
 # Sequential Learning App
 Concrete Strength Prediction with Sequential Learning
 
-This App is based on Pranay Modukuru's [Notebook](https://github.com/pranaymodukuru/Concrete-compressive-strength)
-and got developed within the context of the Mat-O-Lab project.
+This App got developed within the context of the Mat-O-Lab project.
 
 ## Installation
 
