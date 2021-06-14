@@ -1,4 +1,4 @@
-# AdvancedConcretePredictionApp
+# Sequential Learning App
 Concrete Strength Prediction with Sequential Learning
 
 This App is based on Pranay Modukuru's [Notebook](https://github.com/pranaymodukuru/Concrete-compressive-strength)
