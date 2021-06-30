@@ -5,11 +5,11 @@ The app provides flexible and low-threshold access to AI methods via user interf
 
 ## Installation
 
-When not hosted on Aiidalab Plattform, this App needs to install some requirements.
+This App needs to install some requirements when not hosted on a Aiidalab plattform.
 
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the requirements.txt file.
-Navigate to the Directory where you downloaded this Repository and execute this command in your Terminal.
+Navigate to the app directory and execute the following command in your terminal:
 
 ### Python 3
 ```bash
@@ -20,7 +20,7 @@ pip3 install -r requirements.txt
 ```bash
 pip install -r requirements.txt
 ```
-After installing the requirements enable the ui elements
+After installing the requirements you need to enable the ui elements:
 
 ```bash
 jupyter nbextension enable --py widgetsnbextension
