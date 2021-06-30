@@ -38,7 +38,7 @@ A Window in your default browser should open now.
 
 ## Background on the used methodology: 
 
-More information on the methodology is available in the publication entiteled "Sequential learning to accelerate materials discovery of alkali-activated binders" ( http://dx.doi.org/10.13140/RG.2.2.18388.94087 ). 
+More information on the methodology is available in the publication Völker et al. 2021, entiteled "Sequential learning to accelerate materials discovery of alkali-activated binders", DOI: http://dx.doi.org/10.13140/RG.2.2.18388.94087 
 
 # Hands on - a quick guide to the sequential learning app
 
@@ -65,7 +65,8 @@ The sample threshold determines the restriction of the initial training data. If
 The initial sample size can be chosen below. Some SL algorithms require at least 3 samples. It is recommended to not choose less than 4 initial samples. 
 
 ### Sequential Learning Parameters
-This tab lets the user select from several Machine Learning algorithms and utility functions. Some utility functions, such as MEID and MLID, allow to adjust further hyper parameters. The number of randomized SL runs can be set with the “# of SL runs” slider (standard value=30). The “Run” button executes a simulated experiments where the selected SL algorithms solve the optimization problem that has been specified in the “Settings” tab for the set number of SL runs. 
+This tab lets the user select from several Machine Learning (ML) algorithms and utility functions. Some utility functions, such as MEID and MLID, allow to adjust further hyper parameters. As mentioned above, more details on ML algorithms and utility functions can be found in Völker et al. 2021.
+The number of randomized SL runs can be set with the “# of SL runs” slider (standard value=30). The “Run” button executes a simulated experiments where the selected SL algorithms solve the optimization problem that has been specified in the “Settings” tab for the set number of SL runs. 
 
 #### Result diagrams
 The first diagram shows how fast a selected SL algorithm can find its way to the target. This is shown for each SL run as a linineplot in terms of the minimum distances in the design space from the already discovered materials to the targets per SL iterations.  If the discovered materials remain far from the target solution for many iterations, a more explorative approach may help to improve performance. If it converges quickly, a more exploiting algorithm may improve performance even further. 
