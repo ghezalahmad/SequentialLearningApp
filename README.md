@@ -38,7 +38,7 @@ A Window in your default browser should open now.
 
 ## Background on the used methodology: 
 
-More information on the methodology is available in the publication entiteled "Sequential learning to accelerate materials discovery of alkali-activated binders" ( DOI: 10.13140/RG.2.2.18388.94087 ). 
+More information on the methodology is available in the publication entiteled "Sequential learning to accelerate materials discovery of alkali-activated binders" ( http://dx.doi.org/10.13140/RG.2.2.18388.94087 ). 
 
 # Hands on - a quick guide to the sequential learning app
 
