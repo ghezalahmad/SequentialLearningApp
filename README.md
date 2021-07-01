@@ -1,4 +1,4 @@
-# Sequential Learning App (SLAp)
+# Sequential Learning App for Materials Discovery ("SLAMD")
 Here we present an app for accelerating the experimental search for suitable materials. It can be used for method development and for investigating the configuration of Sequential Learning (SL) methods. 
 To determine the performance of SL methods, it is common to use simulated experiments where the ground truth labels for all data points are already known. Initially, only a small fraction is provided to the SL algorithm (although more training data would be available). This is extended with one new data point from the remainder of the available data at each iteration. It is investigated which approach requires the least amount of data to achieve the goal. Approaches that require less data simply lead to faster success in laboratory practice. 
 
@@ -8,7 +8,7 @@ The app provides flexible and low-threshold access to AI methods via user interf
 
 ## Installation
 
-This App needs to install some requirements when not hosted on a Aiidalab plattform.
+"SLAMD" needs to install some requirements when not hosted on a Aiidalab plattform.
 
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the requirements.txt file.
@@ -43,7 +43,7 @@ A Window in your default browser should open now.
 
 More information on the methodology is available in the publication Völker et al. 2021, entiteled "Sequential learning to accelerate materials discovery of alkali-activated binders", DOI: http://dx.doi.org/10.13140/RG.2.2.18388.94087 
 
-# Hands on - a quick guide to the Sequential Learning App - (SLAp)
+# Hands on - a quick guide to "SLAMD"
 
 The app is divided into the four main windows "Upload", "Data Info", "Design Space Explorer" and "Sequenital Learning", which are explained below. 
 
@@ -79,7 +79,7 @@ The histogram below compares the performance in terms of experiments required of
 ## Conclusion
 Serial data collection of SL, even if more successful than RP, can be detrimental in a real-world application, as waiting for experimental results could delay experimental progress. This is especially the case for materials whose synthesis is complex and whose material properties take time to develop or characterize (e.g., 28-day compressive strength of concrete). Collecting all samples at once or in batches may be more successful. 
 SL therefore targets material innovations for which data are not available or large-scale data collection would be too expensive. However, what actually provides an advantage in the lab depends heavily on how the SL problem is designed. 
-The purpose of SLAp is to provide a tool to quickly explore exactly under what conditions SL can help accelerate research. 
+The purpose of "SLAMD" is to provide a tool to quickly explore exactly under what conditions SL can help accelerate research. 
 
 
 
