@@ -61,13 +61,13 @@ The Design Space Explorer allows the visualization of complex relationships in t
 ## Sequential Learning
 This window provides a SL framework divided into the tabs "Settings" - here the optimization scenario can be defined - and "Seqential Learning Parameters" - here the algorithms can be selected, set and virtual experiments can be performed. 
 
-### Settings
+#### Settings
 This window lets the user interactively set up the boundary conditions of the SL problem. The input feature and target properties can be selected simply by mouse click. It is possible to select multiple target properties (Multi-Objective Optimization). The optimization is then based on the sum (or difference - depending on whether maximization or minimization is desired) of the normalized properties. 
 The target can be specified as a quantile of the given properties (or their combinations in case of Multi-Objective Optimization). A lower target threshold (e.g. 90%) accelerates the SL optimization. However, this makes it increasingly difficult for SL to outperform a random process. 
 The sample threshold determines the restriction of the initial training data. If it was not restricted, it would be possible that the searched material is already contained in the initial data - which would make SL superfluous. The sample threshold is therefore always lower than the target threshold. 
 The initial sample size can be chosen below. Some SL algorithms require at least 3 samples. It is recommended to not choose less than 4 initial samples. 
 
-### Sequential Learning Parameters
+#### Sequential Learning Parameters
 This tab lets the user select from several Machine Learning (ML) algorithms and utility functions. Some utility functions, such as MEID and MLID, allow to adjust further hyper parameters. As mentioned above, more details on ML algorithms and utility functions can be found in Völker et al. 2021.
 The number of randomized SL runs can be set with the “# of SL runs” slider (standard value=30). The “Run” button executes a simulated experiments where the selected SL algorithms solve the optimization problem that has been specified in the “Settings” tab for the set number of SL runs. 
 
