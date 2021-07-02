@@ -68,7 +68,14 @@ The sample threshold determines the restriction of the initial training data. If
 The initial sample size can be chosen below. Some SL algorithms require at least 3 samples. It is recommended to not choose less than 4 initial samples. 
 
 #### Sequential Learning Parameters
-This tab lets the user select from several Machine Learning (ML) algorithms and utility functions. Some utility functions, such as MEID and MLID, allow to adjust further hyper parameters. As mentioned above, more details on ML algorithms and utility functions can be found in Völker et al. 2021.
+This tab lets the user select from several Machine Learning (ML) algorithms and utility functions:
+
+(1) Decision Tree Regression - fast but crude algorithm; good for trying different settings and utility functions (min. initial sample size 3); 
+(2) Bagged Tree Regression - slower but more powerful algorithm; suitable for getting good results (min. initial sample size 4); 
+(3) Lolopy Random Forest Regression - fast and powerful algorithm; requires instaltation of JAVA SDK; (min. initial sample size 8); 
+(4) Gaussian Process - not yet implemented. 
+
+Some utility functions, such as MEID and MLID, allow to adjust further hyper parameters. As mentioned above, more details on ML algorithms and utility functions can be found in Völker et al. 2021.
 The number of randomized SL runs can be set with the “# of SL runs” slider (standard value=30). The “Run” button executes a simulated experiments where the selected SL algorithms solve the optimization problem that has been specified in the “Settings” tab for the set number of SL runs. 
 
 #### Result diagrams
