@@ -10,7 +10,6 @@ The app provides flexible and low-threshold access to AI methods via user interf
 
 "SLAMD" needs to install some requirements when not hosted on a Aiidalab plattform.
 
-
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the requirements.txt file.
 Navigate to the app directory and execute the following command in your terminal:
 
@@ -28,6 +27,7 @@ After installing the requirements you need to enable the ui elements:
 ```bash
 jupyter nbextension enable --py widgetsnbextension
 ```
+This app includes the the lolopy Random Forest algorithm with uncertainties from https://github.com/CitrineInformatics/lolo. In order to use this method it is required to instal java SE, e. g. from https://www.oracle.com/java/technologies/javase-jdk16-downloads.html.
 
 ## Usage
 
