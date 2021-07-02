@@ -71,8 +71,11 @@ The initial sample size can be chosen below. Some SL algorithms require at least
 This tab lets the user select from several Machine Learning (ML) algorithms and utility functions:
 
 (1) Decision Tree Regression - fast but crude algorithm; good for trying different settings and utility functions (min. initial sample size 3); 
+
 (2) Bagged Tree Regression - slower but more powerful algorithm; suitable for getting good results (min. initial sample size 4); 
+
 (3) Lolopy Random Forest Regression - fast and powerful algorithm; requires instaltation of JAVA SDK; (min. initial sample size 8); 
+
 (4) Gaussian Process - not yet implemented. 
 
 Some utility functions, such as MEID and MLID, allow to adjust further hyper parameters. As mentioned above, more details on ML algorithms and utility functions can be found in Völker et al. 2021.
