@@ -69,7 +69,7 @@ This window lets the user interactively set up the boundary conditions of the SL
 The target can be specified as a quantile of the given properties (or their combinations in case of Multi-Objective Optimization). A lower target threshold (e.g. 90%) accelerates the SL optimization. However, this makes it increasingly difficult for SL to outperform a random process. 
 The sample threshold determines the restriction of the initial training data. If it was not restricted, it would be possible that the searched material is already contained in the initial data - which would make SL superfluous. The sample threshold is therefore always lower than the target threshold. 
 The initial sample size can be chosen below. Some SL algorithms require at least 3 samples. It is recommended to not choose less than 4 initial samples. 
-![What is this](41SLset.png)
+![What is this](41SLSet.png)
 
 #### Sequential Learning Parameters
 This tab lets the user select from several Machine Learning (ML) algorithms and utility functions:
