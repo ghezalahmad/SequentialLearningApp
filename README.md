@@ -81,9 +81,9 @@ The "Visualize Settings" button generates a qualitative preview of your selected
 #### Sequential Learning Parameters
 This tab lets the user select from several Machine Learning (ML) algorithms and utility functions:
 
-(1) Decision Tree Regression - fast but crude algorithm; good for trying different settings and utility functions (min. initial sample size 3); 
+(1) Decision Tree Regression - fast but crude algorithm; good for trying different settings and utility functions (min. initial sample size 2); 
 
-(2) Bagged Tree Regression - slower but more powerful algorithm; suitable for getting good results (min. initial sample size 4); 
+(2) Scikit Random Forest Regression - fast and powerful algorithm; suitable for getting good results (min. initial sample size 2); 
 
 (3) Lolopy Random Forest Regression - fast and powerful algorithm; requires instaltation of JAVA SDK; (min. initial sample size 8); 
 
