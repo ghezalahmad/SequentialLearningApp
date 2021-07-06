@@ -87,7 +87,7 @@ This tab lets the user select from several Machine Learning (ML) algorithms and 
 
 (3) Lolopy Random Forest Regression - fast and powerful algorithm; requires instaltation of JAVA SDK; (min. initial sample size 8); 
 
-(4) Gaussian Process - fast and powerful algorithm; (min. initial sample size 2);  
+(4) Gaussian Process Regression - fast and powerful algorithm; (min. initial sample size 2);  
 
 Some utility functions, such as MEID and MLID, allow to adjust further hyper parameters. As mentioned above, more details on ML algorithms and utility functions can be found in Völker et al. 2021.
 The number of randomized SL runs can be set with the “# of SL runs” slider (standard value=30). The “Run” button executes a simulated experiments where the selected SL algorithms solve the optimization problem that has been specified in the “Settings” tab for the set number of SL runs. 
