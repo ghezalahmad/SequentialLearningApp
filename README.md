@@ -97,11 +97,38 @@ The number of randomized SL runs can be set with the “# of SL runs” slider (
 
 
 #### Result diagrams
-The first diagram shows how fast a selected SL algorithm can find its way to the target. This is shown for each SL run as a linineplot in terms of the minimum distances in the design space from the already discovered materials to the targets per SL iterations.  If the discovered materials remain far from the target solution for many iterations, a more explorative approach may help to improve performance. If it converges quickly, a more exploiting algorithm may improve performance even further. 
+The first diagram shows two plots that ilustrat how fast a selected SL algorithm can find its path to the target in input space (left) and output space (right). The progress in the input space is represented in terms of the minimum distances in the design space from the already discovered materials to the targets per SL iterations. The progress in the output space is represented in terms of maximum  property combination from the already discovered material per SL iterations. 
+
+If the discovered materials remain far from the target for many iterations, a more explorative approach may help to improve performance. If it converges quickly, a more exploiting algorithm may improve performance even further. 
 
 The histogram below compares the performance in terms of experiments required of the SL algorithm VS a random process. SL is typically compared to a random process (RP) (i.e., without strategy or model) as a baseline benchmark. RPs consider each candidate as equally likely to succeed (uniform distribution). However, the success rate of RP has a nonlinear relationship with the required draws for the case of multiple targets (the size of the target set is controlled by the target threshold in the "Settings" tab of the "Sequential Learning" window). A low target threshold means that RP becomes a much more difficult benchmark.
 
-#### Result history table
+#### History table
+
+The history table is automatically created and stores the settings for each investigated SL scenario. This allows you to easily perform a sensitivity analysis. The table can be downloaded as CSV file. It contains the following information:
+
+##### SL Benchmarks
+Requ. experiments (mean)  Mean Performance of SL in terms of the average number of experiment (incl. initial sample set) to reach the target
+Requ. experiments (std)   Scattering of SL Performance in terms of the standard deviation 
+Requ. experiments (90%)   90 % quantile of SL Perormance (this is the performance that has been achieved in 90% of the cases)
+Requ. experiments (max)   Worst performance (in terms of the maximum required experiments)
+##### SL Parameters
+Algorithm                 Selected Machien Learning algorithm
+Utlity Function           Selected utility function 
+σ Factor                  Factor of the uncertainty used by the utility function (in terms of the factor of the standard deviation)
+qant. (distance utility)  Prediction quantile for distance-based utility
+'# SL runs                Number of randomzied scenarios 
+##### SL Setting
+Initial Sample            Initial training set size
+'# of samples in the DS   Size of the design space in terms of the number of candidates.
+'# Features               Number of used features
+'# Targets                Number of used targets
+Target threshold          Threshold to set the Target in terms of the quantile of the targets in the provided data set
+Sample threshold          Threshold to restrict initial samples in terms of the quantile of the targets in the provided data set
+Features name             Name of the (input) features 
+Targets name              Name of the (output) targets
+##### Detailed Result
+Req. experiments (all)    A list of all results in terms of the number of required experiments. 
 
 ![What is this](43.png)
 
