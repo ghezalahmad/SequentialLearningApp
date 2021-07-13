@@ -109,26 +109,43 @@ The history table is automatically created and stores the settings for each inve
 
 ##### SL Benchmarks
 Requ. experiments (mean)  Mean Performance of SL in terms of the average number of experiment (incl. initial sample set) to reach the target
+
 Requ. experiments (std)   Scattering of SL Performance in terms of the standard deviation 
+
 Requ. experiments (90%)   90 % quantile of SL Perormance (this is the performance that has been achieved in 90% of the cases)
+
 Requ. experiments (max)   Worst performance (in terms of the maximum required experiments)
+
 ##### SL Parameters
-Algorithm                 Selected Machien Learning algorithm
-Utlity Function           Selected utility function 
-σ Factor                  Factor of the uncertainty used by the utility function (in terms of the factor of the standard deviation)
-qant. (distance utility)  Prediction quantile for distance-based utility
-'# SL runs                Number of randomzied scenarios 
+Algorithm'                 'Selected Machien Learning algorithm
+
+Utlity Function'           'Selected utility function 
+
+σ Factor'                  'Factor of the uncertainty used by the utility function (in terms of the factor of the standard deviation)
+
+qant. (distance utility)'  'Prediction quantile for distance-based utility
+
+'# SL runs'                'Number of randomzied scenarios 
+
 ##### SL Setting
-Initial Sample            Initial training set size
-'# of samples in the DS   Size of the design space in terms of the number of candidates.
-'# Features               Number of used features
-'# Targets                Number of used targets
-Target threshold          Threshold to set the Target in terms of the quantile of the targets in the provided data set
-Sample threshold          Threshold to restrict initial samples in terms of the quantile of the targets in the provided data set
-Features name             Name of the (input) features 
-Targets name              Name of the (output) targets
+Initial Sample'            'Initial training set size
+
+'# of samples in the DS'   'Size of the design space in terms of the number of candidates.
+
+'# Features'               'Number of used features
+
+'# Targets'                'Number of used targets
+
+Target threshold'          'Threshold to set the Target in terms of the quantile of the targets in the provided data set
+
+Sample threshold '         'Threshold to restrict initial samples in terms of the quantile of the targets in the provided data set
+
+Features name'             'Name of the (input) features
+
+Targets name'              'Name of the (output) targets
+
 ##### Detailed Result
-Req. experiments (all)    A list of all results in terms of the number of required experiments. 
+Req. experiments (all)'    'A list of all results in terms of the number of required experiments. 
 
 ![What is this](43.png)
 
