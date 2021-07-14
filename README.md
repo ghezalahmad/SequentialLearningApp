@@ -1,9 +1,10 @@
  # Sequential Learning App for Materials Discovery ("SLAMD")
 
-Here we present an app for accelerating the experimental search for suitable materials. It can be used for method development and for investigating the configuration of Sequential Learning (SL) methods. 
+Here we present an app for accelerating the experimental search for suitable materials using machine learning. Sequential learning (SL) is frequently recognized as having great potential to accelerate materials research with a small number of highly complex data points. SL ranks the experiments based on their utility. This is done by coupling the predictions of a Machine Learning model with a decision rule that guides the experimental procedure. The underlying idea is that not all experiments are equally useful. Some experiments provide more information than others. In contrast to classical design of experiments (DOE), where (only) the experimental parameters are optimized, the potential outcomes of the experiments themselves are the decisive factor. The most promising experiments are preferred over dead-end experiments and experiments whose outcome is already known. Each new experiment is selected to maximize the amount of useful information, e.g., according to, using previous experiments as a guide for the next experiment. This app can be used for method development and for investigating the configuration of Sequential Learning (SL) methods. 
+
 To determine the performance of SL methods, it is common to use simulated experiments where the ground truth labels for all data points are already known. Initially, only a small fraction is provided to the SL algorithm (although more training data would be available). This is extended with one new data point from the remainder of the available data at each iteration. It is investigated which approach requires the least amount of data to achieve the goal. Approaches that require less data simply lead to faster success in laboratory practice. 
 
-Thus, the goal is not to actually discover new materials using all available data, but to validate material discovery methods for scenarios where fewer labels are known (e.g., for new materials).
+### Thus, the goal is not to actually discover new materials using all available data, but to validate material discovery methods for scenarios where fewer labels are known (e.g., for new materials).
 
 The app provides flexible and low-threshold access to AI methods via user interfaces. It is based on "Jupyter Notebooks" and integrates seamlessly with the "AIIDA" workflow environment. The underlying code can be easily customized and extended. The app has intuitive and interactive user interfaces for data import and cleansing/selection, (statistical) data analysis, visualization for exploration and plausibility, AI environment as well as data evaluation and result visualization. Structured material data from CSV files are used.
 
@@ -90,15 +91,66 @@ This tab lets the user select from several Machine Learning (ML) algorithms and 
 
 (4) Gaussian Process Regression - fast and powerful algorithm; (min. initial sample size 2);  
 
-Some utility functions, such as MEID and MLID, allow to adjust further hyper parameters. As mentioned above, more details on ML algorithms and utility functions can be found in Völker et al. 2021.
+Some utility functions, such as MEID and MLID, allow to adjust further hyper parameters. As mentioned above, more details on ML algorithms and utility functions can be found in Völker et al. 2021 (Link: http://dx.doi.org/10.13140/RG.2.2.18388.94087/1 ).
 The number of randomized SL runs can be set with the “# of SL runs” slider (standard value=30). The “Run” button executes a simulated experiments where the selected SL algorithms solve the optimization problem that has been specified in the “Settings” tab for the set number of SL runs. 
 
 ![What is this](42.png)
+![What is this](43.png)
 
 #### Result diagrams
-The first diagram shows how fast a selected SL algorithm can find its way to the target. This is shown for each SL run as a linineplot in terms of the minimum distances in the design space from the already discovered materials to the targets per SL iterations.  If the discovered materials remain far from the target solution for many iterations, a more explorative approach may help to improve performance. If it converges quickly, a more exploiting algorithm may improve performance even further. 
+The first diagram shows two plots that ilustrat how fast a selected SL algorithm can find its path to the target in input space (left) and output space (right). The progress in the input space is represented in terms of the minimum distances in the design space from the already discovered materials to the targets per SL iterations. The progress in the output space is represented in terms of maximum  property combination from the already discovered material per SL iterations. 
+
+If the discovered materials remain far from the target (in the plot on the left) for many iterations, a more explorative approach may help to improve performance. If it converges quickly, a more exploiting algorithm may improve performance even further. 
+
+If the sampled properties remain low (in the plot on the right) for many iterations it shows, that the predictive power of the ML algorithm is too low. Choosing a better algorithm may improve the performance. 
 
 The histogram below compares the performance in terms of experiments required of the SL algorithm VS a random process. SL is typically compared to a random process (RP) (i.e., without strategy or model) as a baseline benchmark. RPs consider each candidate as equally likely to succeed (uniform distribution). However, the success rate of RP has a nonlinear relationship with the required draws for the case of multiple targets (the size of the target set is controlled by the target threshold in the "Settings" tab of the "Sequential Learning" window). A low target threshold means that RP becomes a much more difficult benchmark.
+
+#### History table
+
+The history table is automatically created and stores the settings for each investigated SL scenario. This allows you to easily perform a sensitivity analysis. The table can be downloaded as CSV file. It contains the following information:
+
+##### SL Benchmarks
+Requ. experiments (mean):  Mean Performance of SL in terms of the average number of experiment (incl. initial sample set) to reach the target
+
+Requ. experiments (std):   Scattering of SL Performance in terms of the standard deviation 
+
+Requ. experiments (90%):   90 % quantile of SL Perormance (this is the performance that has been achieved in 90% of the cases)
+
+Requ. experiments (max):   Worst performance (in terms of the maximum required experiments)
+
+##### SL Parameters
+Algorithm: Selected Machien Learning algorithm
+
+Utlity Function: Selected utility function 
+
+σ Factor: Factor of the uncertainty used by the utility function (in terms of the factor of the standard deviation)
+
+qant. (distance utility): Prediction quantile for distance-based utility
+
+'# SL runs: Number of randomzied scenarios 
+
+##### SL Setting
+Initial Sample: Initial training set size
+
+'# of samples in the DS: Size of the design space in terms of the number of candidates.
+
+'# Features: Number of used features
+
+'# Targets: Number of used targets
+
+Target threshold: Threshold to set the Target in terms of the quantile of the targets in the provided data set
+
+Sample threshold: Threshold to restrict initial samples in terms of the quantile of the targets in the provided data set
+
+Features name: Name of the (input) features
+
+Targets name: Name of the (output) targets
+
+##### Detailed Result
+Req. experiments (all): A list of all results in terms of the number of required experiments. 
+
+![What is this](44.png)
 
 ## Conclusion
 Serial data collection of SL, even if more successful than RP, can be detrimental in a real-world application, as waiting for experimental results could delay experimental progress. This is especially the case for materials whose synthesis is complex and whose material properties take time to develop or characterize (e.g., 28-day compressive strength of concrete). Collecting all samples at once or in batches may be more successful. 
