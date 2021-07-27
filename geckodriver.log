@@ -314,3 +314,15 @@ console.log: WebExtensions: reset-default-search: No addons in our list are inst
 2021-07-13 17:43:08.456 firefox-bin[3731:45476] Warning: Expected min height of view: (<NSButton: 0x1406c4c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
 2021-07-13 17:43:08.456 firefox-bin[3731:45476] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x1406c5400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
 2021-07-13 17:43:08.457 firefox-bin[3731:45476] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x1414ebc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-07-14 13:41:16.485 firefox-bin[6583:107561] Warning: Expected min height of view: (<NSButton: 0x11d1ad400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-07-14 13:41:16.486 firefox-bin[6583:107561] Warning: Expected min height of view: (<NSButton: 0x140574000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-07-14 13:41:16.487 firefox-bin[6583:107561] Warning: Expected min height of view: (<NSButton: 0x140574400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-07-14 13:41:16.487 firefox-bin[6583:107561] Warning: Expected min height of view: (<NSButton: 0x14057c000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-07-14 13:41:16.488 firefox-bin[6583:107561] Warning: Expected min height of view: (<NSButton: 0x140577800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-07-14 13:41:16.488 firefox-bin[6583:107561] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x14057cc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2021-07-14 13:41:16.488 firefox-bin[6583:107561] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x14091a800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
