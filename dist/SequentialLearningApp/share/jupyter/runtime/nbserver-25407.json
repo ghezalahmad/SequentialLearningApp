@@ -1,0 +1,12 @@
+{
+  "base_url": "/",
+  "hostname": "localhost",
+  "notebook_dir": "/Users/antonvolker/Bundesanstalt fu\u0308r Materialforschung und -pru\u0308fung (BAM)/Kruschwitz, Sabine - Team Data/Projects/Aiida/AiidaLab/Apps/SequentialLearningApp",
+  "password": false,
+  "pid": 25407,
+  "port": 8888,
+  "secure": false,
+  "sock": "",
+  "token": "4f4241189aff07715c1976f75595deeacba45057aa412d97",
+  "url": "http://localhost:8888/"
+}

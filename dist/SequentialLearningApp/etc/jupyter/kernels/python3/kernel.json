@@ -1,0 +1,15 @@
+{
+ "argv": [
+  "/usr/local/opt/python@3.9/bin/python3.9",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+"env": {
+  "PYTHONPATH": "/usr/local/Cellar/ipython/7.25.0/libexec/lib/python3.9/site-packages:/usr/local/Cellar/ipython/7.25.0/libexec/vendor/lib/python3.9/site-packages"
+}
+,
+ "display_name": "Python 3",
+ "language": "python"
+}

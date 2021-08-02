@@ -1,0 +1,12 @@
+{
+  "base_url": "/",
+  "hostname": "localhost",
+  "notebook_dir": "/Users/antonvolker/Bundesanstalt fu\u0308r Materialforschung und -pru\u0308fung (BAM)/Kruschwitz, Sabine - Team Data",
+  "password": false,
+  "pid": 23784,
+  "port": 8888,
+  "secure": false,
+  "sock": "",
+  "token": "a4812031fa54633ad83425f06e68a30460a83bae144f07a1",
+  "url": "http://localhost:8888/"
+}
