@@ -63,12 +63,10 @@ A Window in your default browser should open now.
 
 # SLAMD Tutorial – Materials Discovery
 
-This is a short tutorial that shows through an example how SLAMD can be used in the lab.
+This is a short tutorial that uses a practical example to show how SLAMD can be used in the lab. If you want to apply materials discovery in the lab, you are in the right place. If you are looking for a more comprehensive insight into SLAMDS material discovery algorithms and want to compare different methods in different scenarios, please scroll further to the section "A guide to SLAMD". 
 
 To start SLAMD:
-
 👉 You can launch a preview of SLAMD from the following web address: https://mybinder.org/v2/gh/BAMcvoelker/SequentialLearningApp/HEAD?urlpath=voila%2Frender%2FSequentialLearningApp.ipynb
-
 👉 You can find complete installation instructions for a local copy above
 
 ## Required data
@@ -133,7 +131,12 @@ The uncertainty of the predictions is shown as a further aid to decision making 
 ![image](https://user-images.githubusercontent.com/71640597/161924928-c0acea50-1dfa-45ba-b67e-3952dca4dd5a.png)
 
 
-# Hands on - a quick guide to "SLAMD"
+
+
+
+
+
+# A guide to SLAMD 
 
 In this quick guide the functions of the app are described in detail. The app is divided into the four main windows "Upload", "Data Info", "Design Space Explorer" and "Sequenital Learning", which are explained below. 
 
