@@ -109,19 +109,19 @@ The Data Info (1) field summarizes the properties of the file. Clicking the Info
 For 16 materials data already exist from the lab for slump and fc-28-day (Training data).  
 This means that out of 156 possible candidates, 16 have already been tested in the laboratory and can be used for training the AI. 
 
-![What is this](images/Bildschirmfoto 2022-04-06 um 09.27.56.png) 
+![image](https://user-images.githubusercontent.com/71640597/161925143-aa191d86-1000-4f8f-817a-13c99f8608fc.png)
 
 ## Design Space Explorer
 
 Visualization tools are implemented in the Design Space Explorer (1) - e.g. a scatter matrix (2). This allows selected features (3) to be easily plotted over each other (4). For example, the compromise between strength and processability for the 16 training data can be seen here. 
 
-![What is this](images/Bildschirmfoto 2022-04-06 um 09.28.08.png) 
+![image](https://user-images.githubusercontent.com/71640597/161925092-316e567c-6432-46ec-a9e7-57a1a0a803d7.png)
 
 ## Configure Materials Discovery
 
 In the Materials Discovery window (1) the material optimization is configured. Essentially, the input data (Materials Data (Input)) are selected (2), the target values to be optimized in the laboratory are selected (3) and A-priori information, if available, is also selected (4). In the latter case, of course, a low CO2 footprint is aimed for, which is why minimization must still be clicked here (5). 
 
-![What is this](images/Bildschirmfoto 2022-04-06 um 09.28.21.png) 
+![image](https://user-images.githubusercontent.com/71640597/161925004-01c68e40-32e9-4108-9925-3ef0869c17d5.png)
 
 ## Model Selection and Results 
 
@@ -130,7 +130,8 @@ The calculation of the utility of a material is derived from the predicted mater
 To estimate the added value of the formulation, Novelty (5) shows a value normalized between 0 and 1, indicating the difference from the formulations, which are already in the training data. For example, the third candidate (Idx_Sample = 86) has a relatively low Novelty (0.0006). Therefore, this formulation does not seem to represent a major change in composition and might therefore receive a lower priority. After all, the goal is to find new formulations as quickly as possible. 
 The uncertainty of the predictions is shown as a further aid to decision making (6). Again, candidates with larger uncertainties could be specifically prioritized in order to explore formulations more quickly. 
 
-![What is this](images/Bildschirmfoto 2022-04-06 um 09.28.37.png) 
+![image](https://user-images.githubusercontent.com/71640597/161924928-c0acea50-1dfa-45ba-b67e-3952dca4dd5a.png)
+
 
 # Hands on - a quick guide to "SLAMD"
 
