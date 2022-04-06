@@ -119,7 +119,7 @@ If the data appears unstructured, please adjust the delimiter options.
 
 ## Data Info
 
-The Data Info (1) field summarizes the properties of the file. Clicking the Info button (2) lists the number of uploaded columns and associated samples. In the example on this slide 16 columns are included in total. In them 156 materials are characterized. 
+The Data Info (1) field summarizes the properties of the file. Clicking the Info button (2) lists the number of uploaded columns and associated samples. In the example on this slide 17 columns are included in total. In them 156 materials are characterized. 
 For 16 materials data already exist from the lab for slump and fc-28-day (Training data).  
 This means that out of 156 possible candidates, 16 have already been tested in the laboratory and can be used for training the AI. 
 
