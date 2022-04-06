@@ -61,10 +61,68 @@ voila SequentialLearningApp.ipynb
 
 A Window in your default browser should open now.
 
+# SLAMD Tutorial – Materials Discovery
+
+This is a short tutorial that shows through an example how SLAMD can be used in the lab.
+
+To start SLAMD:
+
+👉 You can launch a preview of SLAMD from the following web address: https://mybinder.org/v2/gh/BAMcvoelker/SequentialLearningApp/HEAD?urlpath=voila%2Frender%2FSequentialLearningApp.ipynb
+
+👉 You can find complete installation instructions for a local copy above
+
+## Required data
+Generally speaking, suitable data characterizes the finished product well. It contains information on the composition and structure of the starting materials, processing steps such as post-treatment and storage conditions, and possibly known properties of the finished products (e.g. a priori information such as carbon footprint, cost delivery times). 
+The sample data in the repository includes the following information:
+
+### Material Data: 
+Composition of the starting materials and structure: molecular composition of the starting materials from XRD (SiO2, CaO, SO3).
+Mixture composition (fly ash and slag, fine and coarse aggregates, water, activator chemicals (Na2SiO3, Na2O (Dry), Sio2 (Dry), superplasticizer.
+### Target: 
+The Experimentally determined cement properties: Compressive strength (MPa) and slump flow (in mm).
+e data are incomplete and include NaNs for the formulations that have not yet been experimentally explored in the laboratory. 
+### A-priori Information: 
+Existing properties of finished products: CO2 footprint
+
+## Upload data with SLAMD
+
+Clicking the Upload button opens the upload dialog.
+
+Here material data can be selected from the file system. CSV data is preferred, Excel is supported for English file versions. (See MaterialsDiscoveryExampleData.csv & BenchmarkingExampleData.csv as a reference)
+
+The selection must be confirmed by clicking the Upload button. 
+
+A file preview appears below.
+
+If the data appears unstructured, please adjust the delimiter options.
+
+## Data Info
+
+The Data Info (1) field summarizes the properties of the file. Clicking the Info button (2) lists the number of uploaded columns and associated samples. In the example on this slide 16 columns are included in total. In them 156 materials are characterized. 
+For 16 materials data already exist from the lab for slump and fc-28-day (Training data).  
+This means that out of 156 possible candidates, 16 have already been tested in the laboratory and can be used for training the AI. 
+
+
+## Design Space Explorer
+
+Visualization tools are implemented in the Design Space Explorer (1) - e.g. a scatter matrix (2). This allows selected features (3) to be easily plotted over each other (4). For example, the compromise between strength and processability for the 16 training data can be seen here. 
+
+## Configure Materials Discovery
+
+In the Materials Discovery window (1) the material optimization is configured. Essentially, the input data (Materials Data (Input)) are selected (2), the target values to be optimized in the laboratory are selected (3) and A-priori information, if available, is also selected (4). In the latter case, of course, a low CO2 footprint is aimed for, which is why minimization must still be clicked here (5). 
+
+## Model Selection and Results 
+
+In the Sequential Learning field (1) the optimization can be executed. Machine learning models and exploration strategies can be specified here (optional). By clicking on the Run button (2), the experiments are sorted by their utility (3). The table that appears below shows the result of the optimization with SLAMD. 
+The calculation of the utility of a material is derived from the predicted material properties (4). The top candidate - in the example with Idx_Sample =1491 - thus has the greatest utility in terms of a good expected property compromise of strength and processability. This materials should be validated in the laboratory next.
+To estimate the added value of the formulation, Novelty (5) shows a value normalized between 0 and 1, indicating the difference from the formulations, which are already in the training data. For example, the third candidate (Idx_Sample = 86) has a relatively low Novelty (0.0006). Therefore, this formulation does not seem to represent a major change in composition and might therefore receive a lower priority. After all, the goal is to find new formulations as quickly as possible. 
+The uncertainty of the predictions is shown as a further aid to decision making (6). Again, candidates with larger uncertainties could be specifically prioritized in order to explore formulations more quickly. 
+
+
 
 # Hands on - a quick guide to "SLAMD"
 
-The app is divided into the four main windows "Upload", "Data Info", "Design Space Explorer" and "Sequenital Learning", which are explained below. 
+In this quick guide the functions of the app are described in detail. The app is divided into the four main windows "Upload", "Data Info", "Design Space Explorer" and "Sequenital Learning", which are explained below. 
 
 ## Upload
 In the upload window, the material data can be imported in CSV or Excel format via a dialog. Benchmarking data must be complete, i.e. for each material composition there must also be (at least) one experimental result. Materials discovery data can be incomplete, i.e. values that have not yet been collected in the lab simply remain empty. SLAMD automatically detects experiments that have already been performed and uses them for training. 
