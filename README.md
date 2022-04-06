@@ -61,6 +61,22 @@ voila SequentialLearningApp.ipynb
 
 A Window in your default browser should open now.
 
+## Known Issues:
+
+It is recommended to restart the app when you upload a new data set.
+
+Comma errors may occur when uploading Excel data. It is recommended to use the *CSV file format.
+
+If the number of targets is changed during benchmarking, the result plot may not appear. The results will still be saved to the results table, so there will be no loss of data. 
+
+In the web preview there may be longer waiting times after a code update because SLAMD has to be reinstalled first.
+
+In the web preview, the Lolo model does not work because it requires Java SDK, which is unfortunately not supported. 
+
+The web preview is hosted on Mybinder. Server failures may occur here. If the program itself does not load after a few minutes or an error message appears, it has been shown that refreshing the page helps. 
+
+The web preview diconnects after about 10 minutes of inactivity. Again, it helps to simply refresh the page. However, all results are then lost. 
+
 # SLAMD Tutorial – Materials Discovery
 
 This is a short tutorial that uses a practical example to show how SLAMD can be used in the lab. If you want to apply materials discovery in the lab, you are in the right place. If you are looking for a more comprehensive insight into SLAMDS material discovery algorithms and want to compare different methods in different scenarios, please scroll further to the section "A guide to SLAMD". 
