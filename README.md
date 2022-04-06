@@ -83,17 +83,20 @@ The Experimentally determined cement properties: Compressive strength (MPa) and
 e data are incomplete and include NaNs for the formulations that have not yet been experimentally explored in the laboratory. 
 ### A-priori Information: 
 Existing properties of finished products: CO2 footprint
+![What is this](images/Bildschirmfoto 2022-04-06 um 09.26.54.png) 
 
 ## Upload data with SLAMD
 
 Clicking the Upload button opens the upload dialog.
+![What is this](images/Bildschirmfoto 2022-04-06 um 09.27.13.png) 
 
 Here material data can be selected from the file system. CSV data is preferred, Excel is supported for English file versions. (See MaterialsDiscoveryExampleData.csv & BenchmarkingExampleData.csv as a reference)
+![What is this](images/Bildschirmfoto 2022-04-06 um 09.27.29.png) 
 
 The selection must be confirmed by clicking the Upload button. 
+![What is this](images/Bildschirmfoto 2022-04-06 um 09.27.44.png) 
 
 A file preview appears below.
-
 If the data appears unstructured, please adjust the delimiter options.
 
 ## Data Info
@@ -101,24 +104,23 @@ If the data appears unstructured, please adjust the delimiter options.
 The Data Info (1) field summarizes the properties of the file. Clicking the Info button (2) lists the number of uploaded columns and associated samples. In the example on this slide 16 columns are included in total. In them 156 materials are characterized. 
 For 16 materials data already exist from the lab for slump and fc-28-day (Training data).  
 This means that out of 156 possible candidates, 16 have already been tested in the laboratory and can be used for training the AI. 
-
+![What is this](images/Bildschirmfoto 2022-04-06 um 09.27.56.png) 
 
 ## Design Space Explorer
 
 Visualization tools are implemented in the Design Space Explorer (1) - e.g. a scatter matrix (2). This allows selected features (3) to be easily plotted over each other (4). For example, the compromise between strength and processability for the 16 training data can be seen here. 
-
+![What is this](images/Bildschirmfoto 2022-04-06 um 09.28.08.png) 
 ## Configure Materials Discovery
 
 In the Materials Discovery window (1) the material optimization is configured. Essentially, the input data (Materials Data (Input)) are selected (2), the target values to be optimized in the laboratory are selected (3) and A-priori information, if available, is also selected (4). In the latter case, of course, a low CO2 footprint is aimed for, which is why minimization must still be clicked here (5). 
-
+![What is this](images/Bildschirmfoto 2022-04-06 um 09.28.21.png) 
 ## Model Selection and Results 
 
 In the Sequential Learning field (1) the optimization can be executed. Machine learning models and exploration strategies can be specified here (optional). By clicking on the Run button (2), the experiments are sorted by their utility (3). The table that appears below shows the result of the optimization with SLAMD. 
 The calculation of the utility of a material is derived from the predicted material properties (4). The top candidate - in the example with Idx_Sample =1491 - thus has the greatest utility in terms of a good expected property compromise of strength and processability. This materials should be validated in the laboratory next.
 To estimate the added value of the formulation, Novelty (5) shows a value normalized between 0 and 1, indicating the difference from the formulations, which are already in the training data. For example, the third candidate (Idx_Sample = 86) has a relatively low Novelty (0.0006). Therefore, this formulation does not seem to represent a major change in composition and might therefore receive a lower priority. After all, the goal is to find new formulations as quickly as possible. 
 The uncertainty of the predictions is shown as a further aid to decision making (6). Again, candidates with larger uncertainties could be specifically prioritized in order to explore formulations more quickly. 
-
-
+![What is this](images/Bildschirmfoto 2022-04-06 um 09.28.37.png) 
 
 # Hands on - a quick guide to "SLAMD"
 
