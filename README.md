@@ -84,20 +84,21 @@ e data are incomplete and include NaNs for the formulations that have not yet be
 ### A-priori Information: 
 Existing properties of finished products: CO2 footprint
 
-![What is this](images/Bildschirmfoto 2022-04-06 um 09.26.54.png) 
+![image](https://user-images.githubusercontent.com/71640597/161924228-a946953e-085d-4861-8295-b6695ffbe7ee.png)
 
 ## Upload data with SLAMD
 
 Clicking the Upload button opens the upload dialog.
 
-![What is this](images/Bildschirmfoto 2022-04-06 um 09.27.13.png) 
+![image](https://user-images.githubusercontent.com/71640597/161924363-f0773ec1-e369-4705-a8e8-439d2de60ea0.png)
 
 Here material data can be selected from the file system. CSV data is preferred, Excel is supported for English file versions. (See MaterialsDiscoveryExampleData.csv & BenchmarkingExampleData.csv as a reference)
-![What is this](images/Bildschirmfoto 2022-04-06 um 09.27.29.png) 
+
+![image](https://user-images.githubusercontent.com/71640597/161924417-0e0934af-ac45-4604-b689-f519f3429775.png)
 
 The selection must be confirmed by clicking the Upload button. 
 
-![What is this](images/Bildschirmfoto 2022-04-06 um 09.27.44.png) 
+![image](https://user-images.githubusercontent.com/71640597/161924463-cd29c9b6-34a9-4985-b319-33eac0cd311c.png)
 
 A file preview appears below.
 If the data appears unstructured, please adjust the delimiter options.
