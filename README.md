@@ -152,7 +152,7 @@ The uncertainty of the predictions is shown as a further aid to decision making 
 
 # A comprehensive guide to SLAMD 
 
-In this quick guide the functions of the app are described in detail. The app is divided into the four main windows "Upload", "Data Info", "Design Space Explorer" and "Sequenital Learning", which are explained below. 
+In this quick guide the functions of the app are described in detail. The app is divided into the four main windows "Upload", "Data Info", "Design Space Explorer", "Benchmarking" and "Materials Discovery", which are explained below. 
 
 ## Upload
 In the upload window, the material data can be imported in CSV or Excel format via a dialog. Benchmarking data must be complete, i.e. for each material composition there must also be (at least) one experimental result. Materials discovery data can be incomplete, i.e. values that have not yet been collected in the lab simply remain empty. SLAMD automatically detects experiments that have already been performed and uses them for training. 
@@ -300,7 +300,7 @@ This tab lets the user select from several Machine Learning (ML) algorithms and 
 
 (2) Scikit Random Forest Regression - fast and powerful algorithm; suitable for getting good results 
 
-(3) Lolopy Random Forest Regression - fast and powerful algorithm; requires instaltation of JAVA SDK;
+(3) Lolopy Random Forest Regression - fast and powerful algorithm; requires instaltation of JAVA SDK; not supported in web-preview;
 
 (4) Gaussian Process Regression - fast and powerful algorithm;  
 
