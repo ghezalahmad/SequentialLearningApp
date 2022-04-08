@@ -61,7 +61,7 @@ A Window in your default browser should open now.
 
 ## Known Issues:
 
-It is recommended to restart the app when you upload a new data set.
+It is recommended to refresh the app when you upload a new data set.
 
 Comma errors may occur when uploading Excel data. It is recommended to use the *CSV file format.
 
